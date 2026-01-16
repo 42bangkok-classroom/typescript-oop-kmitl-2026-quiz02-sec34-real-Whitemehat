@@ -18,7 +18,7 @@ export async function safeFetchUser(id: number) {
             return result = {
                 id: user.id,
                 name: user.name,
-                address: user.address,
+                address: user.address ?? null,
                 phone: user.phone
             };
         }
